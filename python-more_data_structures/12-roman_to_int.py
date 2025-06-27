@@ -18,4 +18,4 @@ def roman_to_int(roman_string):
         else:
             total += current_numeral
         i += 1
-    return (total)            
+    return (total)
