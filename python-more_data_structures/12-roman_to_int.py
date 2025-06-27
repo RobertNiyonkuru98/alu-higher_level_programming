@@ -10,13 +10,12 @@ def roman_to_int(roman_string):
     length = len(roman_string)
     while (i < length):
         current_numeral = numerals[roman_string[i]]
-        if i + 1 <= length -1:
+        if i + 1 <= length - 1:
             next_numeral = numerals[roman_string[i+1]]
         if next_numeral and current_numeral < next_numeral:
-            total += next_numeral - current_numeral 
+            total += next_numeral - current_numeral
             i += 1
         else:
             total += current_numeral
         i += 1
-    return (total)
-            
+    return (total)            
