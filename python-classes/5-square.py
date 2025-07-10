@@ -33,7 +33,7 @@ def size(self, value):
         self.__size = value
 
 def my_print(self):
-    if self.__self == 0:
+    if self.__size == 0:
         print("")
     else:
         for i in range(self.__size):
