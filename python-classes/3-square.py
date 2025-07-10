@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Defining the class Square"""
+
+
 class Square:
     """Filling the square class"""
     def __init__(self, size=0):
@@ -10,6 +12,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = int(size)
+
     def area(self):
         square_area = self.__size ** 2
         return square_area
