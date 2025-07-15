@@ -8,4 +8,4 @@ import json
 def load_from_json_file(filename):
     """Opening a JSON file and deserialising ot object using json.loads"""
     with open(filename, 'r', encoding="utf-8") as file:
-        return json.loads(file)
+        return json.load(file)
