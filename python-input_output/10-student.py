@@ -28,6 +28,6 @@ class Student:
             for item in attrs:
                 if type(item) != str:
                     return context
-                if type in context.keys():
+                if item in context.keys():
                     cont[item] = context[item]
             return cont
