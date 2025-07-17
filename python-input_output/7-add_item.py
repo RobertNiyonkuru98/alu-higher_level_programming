@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""Script that adds all command line arguments to a Python list stored in a JSON file."""
+'''script that adds all args to a python list and saves them to a file'''
 
 import sys
-load_from_json_file = _import_('6-load_from_json_file').load_from_json_file
-save_to_json_file = _import_('5-save_to_json_file').save_to_json_file
+import json
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-filename = "add_item.json"
 try:
-    items = load_from_json_file(filename)
+    json_list = load_from_json_file("add_item.json")
 except FileNotFoundError:
-    items = []
-items.extend(sys.argv[1:])
-save_to_json_file(items, filename)
+    json_list = []
+json_list += sys.argv[1:]
+save_to_json_file(json_list, "add_item.json")
 
