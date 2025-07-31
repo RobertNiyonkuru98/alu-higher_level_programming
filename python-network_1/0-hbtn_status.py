@@ -1,8 +1,19 @@
 #!/usr/bin/python3
 """
-This module fetches the status from a given URL using urllib
-"""
+This module fetches the status from a given URL using urllib.
 
+It sends a GET request to 'https://intranet.hbtn.io/status' with custom headers,
+reads the response, and prints information about the response body:
+    - the type of the response content
+    - the raw content
+    - the decoded content in UTF-8
+
+Example output:
+    Body response:
+        - type: <class 'bytes'>
+        - content: b'...'
+        - utf8 content: ...
+"""
 
 import urllib.request
 
