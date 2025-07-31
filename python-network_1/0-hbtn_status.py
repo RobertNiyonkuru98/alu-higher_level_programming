@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This module fetches the status from a given URL using urllib """
+"""
+This module fetches the status from a given URL using urllib
+"""
 
 
 import urllib.request
