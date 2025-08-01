@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Module 4-hbtn_status.py
+Python script that fetches https://intranet.hbtn.io/status
 """
-
-import requests
-
-
 if __name__ == "__main__":
-    r = requests.get("https://intranet.hbtn.io/status")
+    import requests
+    response = requests.get('https://intranet.hbtn.io/status')
+    content = response.text
     print("Body response:")
-    print("\t- type: {}".format(type(r.text)))
-    print("\t- content: {}".format(r.text))
+    print("\t- type: {}".format(type(content)))
+    print("\t- content: {}".format(content))
