@@ -1,4 +1,4 @@
-!#/usr/bin/node
+#!/usr/bin/node
 
 const strs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
