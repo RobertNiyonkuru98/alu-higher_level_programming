@@ -1,4 +1,4 @@
-!#/usr/bin/node
+#!/usr/bin/node
 function factorial (num) {
 	if (isNan(num) || num <= 1) {
 		return 1;
